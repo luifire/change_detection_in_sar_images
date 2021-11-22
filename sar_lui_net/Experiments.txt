@@ -1,0 +1,85 @@
+1. Primitiv example (Master):
+Stays often 0.95
+
+2. Second
+Often reaches 0.95 but likely to go up and goes around 0.97
+
+3. Third (long jump)
+After each epoch jumps up to around 1
+Goes down to 0.95 as well (also deeper sometimes)
+
+4. Third (long jump) - small learning rate (0.1)
+Does the same as 3.
+Movement between 92 and 100 occures
+
+5. fourth - andreas correctur
+Goes down to 0.92 also sometimes stays below 0.88
+is a very primitiv version
+
+6. fith (also andreas correctur branch)
+Corrected loads, input etc
+goes between 0.6 and 0.7
+makes first good predictions
+
+7. 6th 
+added global context but nothing happened.
+Also goes between 0.6 and 0.7
+
+7. implemented evaluation were we predict the future picture first
+
+8. (n_6) use Adagrad
+After 100 Epochen still didn't go down below a loss of 1
+
+9. n_6 Adadelta and complex global context
+still no improvement
+takes a little bit longer to reach 0.65 but then stays there as well
+
+10. n7 resnet
+stuff from milestone 3 was taken here
+did some setting of the threshold
+it looks good, but loss doesn't go below 0.65
+depending on threshold I get really good results
+
+11. n8 las exp
+run 200.000 iterations, startet with lr = 0.1 and rho=0.99
+ended up at 0.6
+had better training data
+
+12. n9 different fusion
+changed fusion part
+had 200k less parameters
+run 80.000 iterations (fu* energy mode), startet with lr = 0.5 and rho=0.99
+ended up at 0.61
+(but converged a bit quicker then exp 11., exp got down to 0.6 after 100k)
+
+13. n11 sliding window eval
+used smaller areas to tell if something happened
+result:??
+
+14. n13 random traning data, max pooling
+stupidly changed two parameters at once ...
+first on top of all grid based rectangles for training, I added as many random rectangles
+second I changed the average pooling of the global context to max pooling
+	this should have the benefit, that it will take the maximum value for stone or grass and doesn't somehow 
+	average big values away
+somehow the results are more blurry then before
+but that might be because I changed the output from tif to png
+
+also implemented something to test an entire period and it actually correlates with the erruption of volcano piton fournaise
+
+15. n14 quick avg pool check with eval period
+but results were the same7
+
+16. n16 Adagrad instead of adadelta
+after 300k iterations still has around .7 loss (adadelta had .5)
+
+17. n17 back to adadelta run for 1mio iterations
+started from scratch, increased kernel size (CHANNEL_INCREMENT_STEP = 3.5, maxpool = 4
+so more or less we get smaller by 3.5/4 for each layer)
+after 200k iterations no improvement (reached 0.598)
+actually n13 reached 0.588
+
+18. n20 after big net training
+	- reverted gc to find that it increases gc from 0.56 to 0.6
+	- no gc comes down to 0.54 though :/
+	- another test where nothing happens: gc: 0.041, no gc: 0.039

@@ -1,0 +1,12 @@
+ambrym: 
+Fanla, Malampa, Vanuatu
+
+fuego
+Alotenango, Sacatepéquez, Guatemala
+https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=14.475339399457841&lng=-90.89413261623122&zoom=14&preset=CUSTOM&layers=B12,B11,B08&maxcc=100&gain=1.0&gamma=1.0&time=2017-12-01%7C2018-06-03&atmFilter=&showDates=false&evalscript=cmV0dXJuIFtCMTIqMi41LEIxMSoyLjUsQjA4KjIuNV0%3D&showImage
+
+Krakatau
+Anak Krakatau Island
+
+piton de la fournaise
+einfach suchen
