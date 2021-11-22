@@ -1,3 +1,17 @@
+This is the architecture
+![Alt text](submissions/impressions/architecture.png? "Architecture")
+
+(Cleaned) image of day 0
+![Alt text](submissions/impressions/amrym_pred_interest.png? "Architecture")
+
+predicted image of day 6
+![Alt text](submissions/impressions/amrym_pred_future.png? "Architecture")
+
+Difference of the whole image.
+![Alt text](submissions/impressions/diff_image.png? "Architecture")
+
+
+
 ---------------------
 Due to space constraints I couldn't upload all images and other files from this repo.
 
