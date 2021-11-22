@@ -1,15 +1,23 @@
-This is the architecture
-![Alt text](submissions/impressions/architecture.png? "Architecture")
+This is the architecture <br>
 
-(Cleaned) image of day 0
-![Alt text](submissions/impressions/amrym_pred_interest.png? "Architecture")
+<p align="left">
+  <img src="https://raw.githubusercontent.com/luifire/change_detection_in_sar_images/main/submissions/impressions/architecture.png" height=300>
+</p>
 
-predicted image of day 6
-![Alt text](submissions/impressions/amrym_pred_future.png? "Architecture")
+(Cleaned) image of day 0 <br>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/luifire/change_detection_in_sar_images/main/submissions/impressions/amrym_pred_interest.png" height=200>
+</p>
 
-Difference of the whole image.
-![Alt text](submissions/impressions/diff_image.png? "Architecture")
+predicted image of day 6 <br>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/luifire/change_detection_in_sar_images/main/submissions/impressions/amrym_pred_future.png" height=200>
+</p>
 
+Difference of the whole image. <br>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/luifire/change_detection_in_sar_images/main/submissions/impressions/diff_image.png" height=200>
+</p>
 
 
 ---------------------
